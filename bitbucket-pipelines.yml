@@ -1,0 +1,24 @@
+image: ubuntu
+pipelines:
+  branches:
+    dev-data:
+      - step:
+          name: Build and Test
+          script:
+            - IMAGE_NAME=dev-data
+            - docker build . --file Dockerfile --tag techbazaar/dev-data:latest
+            - echo ${DOCKERHUB_PASSWORD} | docker login --username $DOCKERHUB_USERNAME --password-stdin
+            - docker push techbazaar/dev-data:latest 
+            - docker tag techbazaar/dev-data:latest techbazaar/dev-data:$BITBUCKET_COMMIT             
+            - docker push techbazaar/dev-data:$BITBUCKET_COMMIT
+            - pipe: atlassian/ssh-run:0.4.1
+              variables:
+                SSH_USER: $USER
+                SERVER: $SERVER
+                COMMAND: 'bash /root/docker-compose/data/dev-data.sh'
+          services:
+            - docker 
+definitions:
+  services:
+    docker:
+      memory: 3072

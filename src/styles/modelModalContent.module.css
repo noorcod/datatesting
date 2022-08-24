@@ -1,0 +1,37 @@
+.shoaib :global(.modal-dialog){
+    max-width: 60% !important;
+}
+
+.imagesModal :global(.modal-dialog){
+    max-width: 60% !important;
+    min-height: 100%;
+}
+
+.slider :global(.fade){
+    opacity: 1!important;
+}
+.slider{
+    margin-bottom: 100px;
+}
+.slider :global(.thumbnail){
+    max-height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.slider :global(.next),:global(.prev){
+    text-decoration: none;
+    text-shadow: 0px 0px 10px black !important;
+}
+.slider :global(.slide-number){
+    text-decoration: none;
+    text-shadow: 0px 0px 10px black !important;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .imagesModal :global(.modal-dialog){
+        max-width: 100% !important;
+    }
+}

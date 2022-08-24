@@ -1,0 +1,45 @@
+.wrapper {
+    height: 90vh;
+}
+
+.passwordInput {
+    position: relative;
+}
+
+.passwordInput svg {
+    bottom: 13px;
+    position: absolute;
+    right: 10px;
+    width: 16px;
+}
+
+.passwordField {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+/* .form-control.is-invalid, .was-validated .form-control:invalid{
+    
+    background-position: right calc(1.375em + 0.1875rem) center;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid{
+    
+    background-position: right calc(1.375em + 0.1875rem) center;
+} */
+
+
+
+:local(.login) :global(.form-control.is-invalid), :global(.form-control.is-valid) , :global(.was-validated)  :global(.form-control:invalid){
+    padding-right: calc(2.4em + 0.1875rem) !important;
+    background-position: right calc(1.375em + 0.1875rem) center !important;
+}
+:local(.login) :global(.form-control.is-invalid), :global(.form-control.is-valid) , :global(.was-validated) :global(.form-control:valid){
+    padding-right: calc(2.4em + 0.1875rem) !important;
+    background-position: right calc(1.375em + 0.1875rem) center !important;
+}
+:local(.login) :global(.form-control){
+    padding-right: 30px !important;
+}

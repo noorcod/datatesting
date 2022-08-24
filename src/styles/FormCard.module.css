@@ -1,0 +1,11 @@
+.formCard {
+    min-width: 400px !important;
+    width: auto;
+    padding: 3rem;
+}
+
+@media screen and (max-width: 636px) {
+    .formCard {
+        padding: 1rem;
+    }
+}

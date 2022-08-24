@@ -1,0 +1,20 @@
+.field :global(.tox-fullscreen){
+    top: 75px !important;
+    left: 13.5% !important;
+    height: 90vh !important;
+}
+
+@media screen and (max-width: 780px) {
+    .field :global(.tox-fullscreen){
+        left: 0 !important;
+    }
+}
+/* .field :global(.w-md-editor-fullscreen):fullscreen{ 
+    position: fixed;
+    top: 200px;
+} */
+
+/* .field :global(:fullscreen){
+    position: absolute;
+    z-index: 2000;
+} */

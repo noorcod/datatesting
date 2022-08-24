@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  dev-data:
+    image: techbazaar/dev-data:latest
+    ports:
+      - 3001:80
+    networks:
+        - dev
+networks:
+   dev:
+    external: true

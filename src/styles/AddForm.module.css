@@ -1,0 +1,34 @@
+.background {
+    opacity: 0.1;
+    filter: blur(10px);
+}
+
+.formContent {
+    z-index: 1;
+}
+
+.addForm {
+    padding: 0 50px !important;
+}
+.form {
+    width: 70% !important;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .addForm {
+        padding: 0 10px !important;
+    }
+    .form {
+        width: 100% !important;
+    }
+ }
+
+ @media screen and (max-width: 1024px) {
+    .addForm {
+        padding: 0 10px !important;
+    }
+    .form {
+        width: 100% !important;
+    }
+ }

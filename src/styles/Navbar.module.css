@@ -1,0 +1,9 @@
+nav {
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .navItem {
+        flex-direction: row-reverse;
+    }
+}

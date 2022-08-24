@@ -1,0 +1,122 @@
+body {
+    font-family: 'Cabin', sans-serif;
+    background: #F5F6FA !important;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, span {
+    font-family: 'Cabin', sans-serif;
+}
+
+h1,h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+.link {
+    color: #8834FF;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #8834FF;
+}
+
+input:focus {
+    box-shadow: none !important;
+    border: 1px solid #D957F9 !important;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #8834FF;
+    border:1px solid #8834FF;
+}
+
+button {
+    background: linear-gradient(180deg, #A93BFF 0%, #8834FF 100%);
+    color: #fff ;
+    padding: .50rem .75rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+input:invalid[focused="true"] {
+    border: 1px solid red !important;
+}
+
+input:invalid[focused="true"] ~ div {
+    display: block;
+    color: red;
+}
+
+.shadowMain {
+    box-shadow: 0px 2px 4px rgba(39, 53, 70, 0.1);;
+}
+
+
+.react-select input:focus{
+    border: 0 !important;
+}
+
+
+
+.backFormButton {
+    border-radius: 4px;
+    background-color: blue;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .backFormButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .backFormButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transform: rotate(180deg);
+    transition: 0.5s;
+  }
+  
+  .backFormButton:hover span {
+    padding-left: 25px;
+  }
+  
+  .backFormButton:hover span:after {
+    opacity: 1;
+    left: 0;
+  }
+
+.asterik-label::before{
+    content: "* ";
+    color: red;
+}
+
+.tox-statusbar__branding svg{
+    display: none;
+}
+
+
+/* .react-select div{
+    z-index: 2;
+} */
+/* .react-select:active{
+    background-color: blue;
+}  */
+
+.react-select > div:first-of-type + div{
+    z-index: 3;
+}

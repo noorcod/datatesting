@@ -1,0 +1,118 @@
+:local(.section) :global(label){
+    display: block;
+    width: 100%;
+    border: 1px dashed #DEDFE4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 10px auto;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+:local(.section) :global(span){
+    margin: 10px 0px;
+    font-size: 12px;
+}
+
+:local(.section) :global(input){
+    display: none;
+}
+/* :local(.section){
+    display: flex;
+    align-items: center;
+} */
+:local(.uploadBtn) :global(label){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted black;
+    border-radius: 20px;
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 2rem auto;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 2px 0px;
+}
+
+:local(.uploadBtn) :global(input){
+    display: none;
+}
+
+:local(.image) {
+    margin: 1rem 0.5rem;
+    position: relative;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 2px 0px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+    
+    border: 0.5px solid rgba(0,0,0,0.12);
+}
+:local(.image) :global(.icon){
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: lightcoral;
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+
+:local(.image) :global(.tag){
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    background: rgb(67, 42, 211);
+    border-radius: 0 3px 3px 0;
+    color: rgb(255, 255, 255);
+    height: 20px;
+    padding: 0 18px 0 15px;
+    text-decoration: none;
+}
+:local(.image) :global(.tag)::after{
+    background: #fff;
+    border-bottom: 10px solid transparent;
+    border-left: 8px solid rgb(67, 42, 211);
+    border-top: 10px solid transparent;
+    content: '';
+    position: absolute;
+    
+    right: 0;
+    top: 0;
+}
+
+
+:local(.image) :global(.img){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+:local(.image) :global(.icon):hover{
+    background-color: red;
+}
+
+:local(.image) :global(img){
+    border-radius: 2px;
+    margin: 0;
+}
+
+.minWidth{
+    min-width: 350px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+:global(.row) :global(.grabbable){
+    max-width: 350px;
+}
+
+ 

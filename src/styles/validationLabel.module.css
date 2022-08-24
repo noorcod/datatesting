@@ -1,0 +1,3 @@
+:local(.thisLabel) :global(.form-check-input):valid~:global(.form-check-label){
+    color: black !important;
+}
